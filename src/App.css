@@ -1,16 +1,12 @@
 body{
   background-image: linear-gradient(354.5829769202486deg, white, #dfd7c2);
   background-repeat: no-repeat;
-  color: navy;
+  color: rgb(0, 0, 0);
 }
 
-.details {
-  margin: 1rem;
-  text-align: justify;
-}
 
 .App {
-  text-align: center;
+  text-align: justify;
 }
 
 .App-header {
@@ -35,9 +31,9 @@ a {
   width: 100%;
   background-color: #333;
   color: white;
-  text-align: center;
+  text-align: justify;
   padding: 20px;
-  text-align: center;
+  text-align: justify;
 }
 
 .navbar{
@@ -82,4 +78,44 @@ a {
 .home_info{
   text-align: justify;
   margin: 1rem;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Add shadow */
+  border-radius: 10px;
+}
+
+table {
+  border: 2px solid #dee2e6; /* Thicker border */
+  border-collapse: collapse ;
+  border-radius: 10% ;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
 }
