@@ -1,16 +1,21 @@
-import './App.css';
+
 import Navigation from './Navigation';
 import Footer from './Footer';
-import Home from './Home';
 
-function App() {
+import './App.css';
+import SurveyForm from './SurveyForm';
+
+function App({person}) {
   return (
     <div className="App">
       <Navigation />
-      <Home />
+      <SurveyForm />
       <Footer />
     </div>
   );
 }
+
+
+
 
 export default App;
