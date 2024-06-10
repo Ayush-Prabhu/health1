@@ -4,8 +4,22 @@ import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore"
 import "./Template.css"
 import blank from "./blank-survey.PNG"
 import sample from "./SampleSurvey.png"
+import uuid from "react-uuid"
+import {useNavigate} from "react-router-dom"
+
 
 function Template(){
+    const navigate = useNavigate();
+    const createForm = ()=>{
+        const id= uuid();
+        
+        navigate('/form/'+id);
+    }
+    const sampleForm = ()=>{
+        const id= uuid();
+        
+        navigate('/sampleform/'+id);
+    }
 return(
     <div className='template_section'>
         <div className='template_top'>
@@ -22,11 +36,11 @@ return(
             
         </div>
         <div className='template_body'>
-            <div className='template_card'>
+            <div className='template_card' onClick={createForm}>
                 <img src={blank} alt="blank" className='template_card_image' />
                 <p className='template_card_title'>Blank</p>
             </div>
-            <div className='template_card'>
+            <div className='template_card' onClick={sampleForm}>
                 <img src={sample} alt="sample survey" className='template_card_image' />
                 <p className='template_card_title'>Sample Survey</p>
             </div>
