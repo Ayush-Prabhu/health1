@@ -11,9 +11,9 @@ const TableInputModal = ({ isTableModalOpen, closeModal, onSave, csvContent, set
     setTableData([...tableData, newRow]);
   };
 
-  const [csvcontent, setcsvContent] =useState([...csvContent]);
+  const [csvcontent, setcsvContent] =useState(csvContent);
   const handleSave = () => {
-    console.log("1"+csvContent);
+    console.log(csvContent);
     setCsvContent(csvContent);
     onSave(csvContent);
     closeModal();

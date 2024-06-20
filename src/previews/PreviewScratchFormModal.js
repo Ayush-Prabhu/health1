@@ -1,8 +1,21 @@
 // PreviewModal.js
 import React,{useState} from 'react';
-import { Modal, Button,Container, Form, Table  } from 'react-bootstrap';
+import { Modal, Button,Container, Form } from 'react-bootstrap';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import {Table,TableBody,TableCell,TableRow} from "@material-ui/core";
 import './PreviewModal.css';
+import Latex from 'react-latex-next';
 //import CustomComponent from '../SurveyForm'
+
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
 
 const CustomComponent=({questions})=>{
 
@@ -28,7 +41,7 @@ const CustomComponent=({questions})=>{
       // Handle form submission (e.g., send answers to the server)
       console.log('User answers:', userAnswers);
     };
-  
+    console.log(questions);
     return (
       <Container style={{pointerEvents:"none"}}>
         <h1>Survey</h1>
@@ -40,8 +53,39 @@ const CustomComponent=({questions})=>{
               // Render radio buttons for BRIEF questions
               return (
                 <div>
-                <Form.Group key={question.id}>
-                  <Form.Label>{++i + ". " + question.questionText}</Form.Label>
+                <Form.Group key={question.id} style={{display:"flex",flexDirection:"column"}}>
+                  <Form.Label>{++i + ". " + question.questionText }</Form.Label>
+                  {
+                    
+                    question.image.length > 0 && question.image.map(img=>(
+                    <img src={`data:image/jpeg;base64,${img}`} alt="Converted Image" style={{ maxWidth: '200px', marginTop: '10px' }} />
+                  ))}
+                  {<div>
+
+                  <pre>
+
+
+
+                  </pre>
+                    <Table>
+                    {question.table.length>0 && question.table.map(rows=>(
+                      <TableBody>
+                      <TableRow>
+                      {rows.split(',').map(dat => (
+                        <StyledTableCell>{dat}</StyledTableCell>
+                      ))}
+                      </TableRow>
+                      </TableBody>
+                      
+                    ))}
+                    </Table>
+                    </div>
+                  }
+                  {
+                    question.latex.length>0&&question.latex.map(lat=>(
+                      <Latex strict displayMode={true}>{lat}</Latex>
+                    ))
+                  }
                   {question.options.map((option) => (
                     <Form.Check
                       key={option}
@@ -60,6 +104,11 @@ const CustomComponent=({questions})=>{
               // Render a table for other question types
               return (
                 <div key={question.id} className="table-container">
+                {
+                    
+                    questions.image.length > 0 && question.image.map(img=>(
+                    <img src={`data:image/jpeg;base64,${img}`} alt="Converted Image" style={{ maxWidth: '200px', marginTop: '10px' }} />
+                  ))}
                   <Table striped bordered>
                     <thead>
                       <tr>
@@ -97,7 +146,13 @@ const CustomComponent=({questions})=>{
               return (
                 <div key={question.id}>
                   <Form.Label className='form-label'>{question.id + ". " + question.text}</Form.Label>
+                  {
+                    
+                    question.image.length > 0 && question.image.map(img=>(
+                    <img src={`data:image/jpeg;base64,${img}`} alt="Converted Image" style={{ maxWidth: '200px', marginTop: '10px' }} />
+                  ))}
                   <div className="table-container">
+
                   <Table striped bordered key={question.id}>
                     <tbody>
                       {question.info.map((row) => (
@@ -120,6 +175,11 @@ const CustomComponent=({questions})=>{
               return (
                 <div key={question.id}>
                   <Form.Label>{question.id + ". " + question.text}</Form.Label>
+                  {
+                    
+                    question.image.length > 0 && question.image.map(img=>(
+                    <img src={`data:image/jpeg;base64,${img}`} alt="Converted Image" style={{ maxWidth: '200px', marginTop: '10px' }} />
+                  ))}
                   <div className="table-container"><Table striped bordered key={question.id}>
                     <tbody>
                       {question.info.map((row, rowIndex) => (

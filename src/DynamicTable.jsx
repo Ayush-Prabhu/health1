@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './DynamicTable.css'; // Example CSS for styling
 import { Table } from 'react-bootstrap';
 
-const DynamicTable = ({handleSave,TableData,setCsvContent}) => {
+const DynamicTable = ({handleSave,TableData,setCsvContent,csvContent}) => {
   const initialTableData = [[{ value: 'A1', rowspan: 1, colspan: 1 }, { value: 'B1', rowspan: 1, colspan: 1 }],
   [{ value: 'A2', rowspan: 1, colspan: 1 }, { value: 'B2', rowspan: 1, colspan: 1 }]];
 
@@ -28,17 +28,18 @@ const DynamicTable = ({handleSave,TableData,setCsvContent}) => {
 
   const handleSaveHere=()=>
     {
-        var csvContent = tableData.map(row => {if(row.length>=0){
-            return row.map(data =>`${data.value}`).join(',')
+        tableData.map((row,i) => {if(row.length>=0){
+            csvContent.str[i]= row.map(data =>`${data.value}`).join(',')
           }else return ""}).join('\n');
-        setCsvContent(csvContent);
+        // setCsvContent(csvContent);
+        
         console.log(csvContent);
         handleSave();
     }
 ;
   const mergeCells = () => {
     const updatedTableData = [...tableData];
-    const selectedCells = [{ row: 0, col: 0 }, { row: 1, col: 0 }]; // Example: merge cells A1 and A2
+    const selectedCells = [{ row: 0, col: 0 }, { row: 1, col: 0 }]; 
 
     if (selectedCells.length > 1) {
       const firstCell = selectedCells[0];

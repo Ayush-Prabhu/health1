@@ -24,6 +24,7 @@ import {
   Button,
   Radio,
   FormControlLabel,
+  Icon,
 } from "@material-ui/core";
 import { BsTrash, BsFileText } from "react-icons/bs";
 import { FcRightUp } from "react-icons/fc";
@@ -35,6 +36,7 @@ import SaveIcon from "@material-ui/icons/SaveAlt";
 import Toolbar from "./Toolbar";
 import ImageModal from "./ImageModal"
 import TableInputModal from "./TableInputModal";
+import LatexModal from "./LatexInput/LatexModal";
 
 const StrictModeDroppable = ({ children, ...props }) => {
   const [enabled, setEnabled] = useState(false);
@@ -53,7 +55,10 @@ const StrictModeDroppable = ({ children, ...props }) => {
 
 var strs=[];
 
+
 function QuestionForm() {
+  const [csvContent,setCsvContent] = useState({"str":[]});
+  const [latexData, setLatexData] = useState({"latex":[]});
   const [questions, setQuestions] = useState([
     {
       questionText: "",
@@ -64,8 +69,27 @@ function QuestionForm() {
       chosenAnswer: "",
       weightage: 0,
       weightSet: 0,
+      image:strs,
+      table:csvContent.str,
+      latex:latexData.latex,
     },
   ]);
+
+  const [isLatexOpen, setIsLatexOpen] = useState(false);
+
+
+  const openLatexModal = () => {
+    setIsLatexOpen(true);
+  };
+
+  const closeLatexModal = () => {
+    setIsLatexOpen(false);
+  };
+
+  const handleLatexSubmit = (latexData) => {
+    console.log(latexData);
+    setLatexData(latexData);
+  };
 
   const [openImageModal, setOpenImageModal] = useState(false);
   const handleOpenImageModal = () => {
@@ -87,11 +111,10 @@ function QuestionForm() {
   const closeTableModal = () => {
     setIsTableModalOpen(false);
   };
-  const [csvContent,setCsvContent] = useState([]);
 
-  const getCsvContent=(str) =>{
-    return str;
-  }
+  
+
+
 
   const handleSaveTable = (csvContent) => {
     //console.log('Table Data:', tableData);
@@ -99,9 +122,8 @@ function QuestionForm() {
     // const csvContent = tableData.map(row => {
     //   return row.map(data =>`${data.value}`).join(',')
     // }).join('\n');
-    setCsvContent(getCsvContent(csvContent));
-    console.log("2"+getCsvContent(csvContent));
-    console.log('CSV Content:', csvContent);
+    setCsvContent(csvContent);
+    console.log('CSV Content:', csvContent.str);
   };
   
 
@@ -761,17 +783,18 @@ function QuestionForm() {
                                   csvContent={csvContent}
                                   setCsvContent={setCsvContent}
       />
-                              <Button>
-                                <CropOriginal
-                                  className="edit"
-                                  fontSize="large"
-                                />
+                              <Button onClick={openLatexModal}>
+                                <Icon
+                                  fontSize="small" style={{textTransform:"none",color:"#5F6368",paddingBottom:"30px"}}>Lₓ</Icon>
                               </Button>
+                              <LatexModal isOpen={isLatexOpen} onClose={closeLatexModal} onSubmit={handleLatexSubmit} setLatexData={setLatexData} latexData={latexData} />
+                              
                               <Button>
                                 <TextFields className="edit" fontSize="large" />
                               </Button>
                             </div>
                           </div>
+                          
                         </Accordion>
                       </div>
                     </div>
