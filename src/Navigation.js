@@ -5,7 +5,7 @@ export default function Navigation() {
         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
             <Container fluid>
                 <Navbar.Brand href="/">
-                    <img className='logo' src={require('./manipal.jpg')} alt="" />
+                    <img className='logo' width="100" src={require('./manipal.jpg')} alt="" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
