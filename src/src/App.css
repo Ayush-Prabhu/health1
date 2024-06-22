@@ -1,0 +1,121 @@
+body{
+  background-color: linear-gradient(354.5829769202486deg, white, #dfd7c2);
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+}
+
+
+.App {
+  text-align: justify;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.bottom_details {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: justify;
+  padding: 20px;
+  text-align: justify;
+}
+
+.navbar{
+  position: sticky;
+  z-index: 1;
+}
+
+.nav-link:hover{
+  background-color: aqua;
+  color: black;
+}
+
+/* .navbar-brand:hover */
+
+.img-thumbnail{
+  width: 100px;
+}
+
+.logo{
+  height: 50px;
+  width: 100px;
+}
+
+.card-container{
+  display: flex;
+}
+
+.card{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 1rem;
+}
+
+.card :hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#description{
+  font-size:medium;
+}
+
+.home_info{
+  text-align: justify;
+  margin: 1rem;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+  text-align: justify;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Add shadow */
+  border-radius: 10px;
+}
+
+table {
+  border: 2px solid #dee2e6; /* Thicker border */
+  border-collapse: collapse ;
+  border-radius: 10% ;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}

@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "tool": "All Aspects of Health Literacy Scale - AAHLS",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "140 citation",
+    "Author": "Deborah Chinn",
+    "Email Id": "deborah.chinn@kcl.ac.uk"
+  },
+  {
+    "id": 2,
+    "tool": "Brief Health Literacy Screening Tool - BRIEF",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "67 citations",
+    "Author": "Jolie Haun",
+    "Email Id": "joliehaun@gmail.com"
+  },
+  {
+    "id": 3,
+    "tool": "Composite Health Literacy Scale and Subjective Numeracy Scale - HLS/SNS",
+    "CATEGORY": ["DIABETES"],
+    "Population age:": "Older Adults: 65+ years, Adults: 18 to 64 years",
+    "citation": "9 citations",
+    "Author": "Huabin Luo",
+    "Email Id": "luoh@ecu.edu"
+  },
+  {
+    "id": 4,
+    "tool": "Conceptual based short-form health literacy questionnaire (HLS-SF12)",
+    "CATEGORY": [""],
+    "Population age:": "",
+    "citation": "",
+    "Author": "Peter WS Chang",
+    "Email Id": "peter.chang3@gmail.com"
+  },
+  {
+    "id": 5,
+    "tool": "Consumer Assessment of Healthcare Providers and Systems - CAHPS",
+    "CATEGORY": ["HEALTH PROMOTION"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "22 citations",
+    "Author": "Beverly A Weidmer",
+    "Email Id": "beverly_weidmer@rand.org"
+  },
+  {
+    "id": 6,
+    "tool": "Critical Nutrition Literacy Instrument",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "45 citation",
+    "Author": "Oystein Guttersrud",
+    "Email Id": "oystein.guttersrud@naturtagsenteret.no"
+  },
+  {
+    "id": 7,
+    "tool": "Demographic Assessment for Health Literacy - DAHL",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Older Adults: 65+ years",
+    "citation": "137 citation",
+    "Author": "AmreshHanchate",
+    "Email Id": "hanchate@bu.edu"
+  },
+  {
+    "id": 8,
+    "tool": "Digital Healthy Diet Literacy (DDL)",
+    "CATEGORY": ["Nutrition", "digital health"],
+    "Population age:": "adult: 18 to 64 years",
+    "citation": "35 citation",
+    "Author": "Tuyen Van Duong",
+    "Email Id": "wt.ude.umt@yrrehs"
+  },
+  {
+    "id": 9,
+    "tool": "Eastern-Middle Eastern- Adult- Health Literacy 13 Point Questionnaire - EMAHL13",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "34 citiation",
+    "Author": "Satish Chandrashekar nair",
+    "Email Id": "satchi2000@gmail.com"
+  },
+  {
+    "id": 10,
+    "tool": "eHEALS- eHealth Literacy Scale - eHEALS",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "",
+    "citation": "",
+    "Author": "Lisa L Hyde",
+    "Email Id": "Lisa.L.Hyde@uon.edu.au"
+  },
+  {
+    "id": 11,
+    "tool": "European Health Literacy Survey - HLS-EU-Q16",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "adult: 18 to 64 years",
+    "citation": "73 citation",
+    "Author": "Laurent  Rigal",
+    "Email Id": "laurent.rigal@tree.tr"
+  },
+  {
+    "id": 12,
+    "tool": "Food and Nutrition Literacy (FNLIT) scale for elementary school children",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "Adolescents: 10 to 17 years",
+    "citation": "65 Cittions",
+    "Author": "Nasrin Omidvar",
+    "Email Id": "omidvar.nasrin@gmail.com"
+  },
+  {
+    "id": 13,
+    "tool": "Food Label Literacy for Applied Nutrition Knowledge Questionnaire - FLLANK",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "Children: 0 to 9 years",
+    "citation": "34 citiation",
+    "Author": "David Katz",
+    "Email Id": "davkatz7@gmail.com"
+  },
+  {
+    "id": 14,
+    "tool": "Fostering literacy for good health today FLIGHT",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "",
+    "citation": "",
+    "Author": "Raymond",
+    "Email Id": "ro71@nova.edu"
+  },
+  {
+    "id": 15,
+    "tool": "Health Literacy Measure for Adolescents - HELMA",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adolescents: 10 to 17 years",
+    "citation": "64 citations",
+    "Author": "Ali Montazeri",
+    "Email Id": "montazeri@acecr.ac.ir"
+  },
+  {
+    "id": 16,
+    "tool": "Health Literacy Skills Instrument-Long Form",
+    "CATEGORY": [""],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "",
+    "Author": "Lauren McCormack",
+    "Email Id": "Lmac@rti.org"
+  },
+  {
+    "id": 17,
+    "tool": "Health Literacy Skills Instrument- Short Form - HLSI-10",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "67 citations",
+    "Author": "Lauren McCormack",
+    "Email Id": "Lmac@rti.org"
+  },
+  {
+    "id": 18,
+    "tool": "HLSAC Health Literacy for School-Aged Children",
+    "CATEGORY": [""],
+    "Population age:": "",
+    "citation": "",
+    "Author": "Olli Paakkari",
+    "Email Id": "olli.paakkari@jyu.fi"
+  },
+  {
+    "id": 19,
+    "tool": "Kidney Transplant Understanding Tool - K-TUT",
+    "CATEGORY": ["Kidney Disease","GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "16 citation",
+    "Author": "Holly Mansell",
+    "Email Id": "holly.mansell@usask.ca"
+  },
+  {
+    "id": 20,
+    "tool": "Medical Term Recognition Test - METER",
+    "CATEGORY": ["Health promotion"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "85Citations",
+    "Author": "Katherine Rawson",
+    "Email Id": "krawson1@kent.edu"
+  },
+  {
+    "id": 21,
+    "tool": "Newest Vital Sign - English - NVS",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "Older Adults: 65+ years, Adults: 18 to 64 years",
+    "citation": "1871 Citations",
+    "Author": "Barry Weiss",
+    "Email Id": "bdweiss@u.arizona.edu"
+  },
+  {
+    "id": 22,
+    "tool": "Numeracy Understanding in Medicine Instrument (Short version) - S-NUMi",
+    "CATEGORY": ["numercy"],
+    "Population age:": "adult: 18 to 64 years",
+    "citation": "26 citation",
+    "Author": "Marilyn  Schapira",
+    "Email Id": "mschap@upenn.edu"
+  },
+  {
+    "id": 23,
+    "tool": "Oral Health Literacy Instrument - OHLI",
+    "CATEGORY": ["Dental health"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "Citations:101",
+    "Author": "Dania Sabbahi",
+    "Email Id": "dsabbahi@kau.edu.sa"
+  },
+  {
+    "id": 24,
+    "tool": "Parenting Plus Skills Index - PPSI",
+    "CATEGORY": ["Parenting"],
+    "Population age:": "",
+    "citation": "10 citation",
+    "Author": "Danielle  Muscat",
+    "Email Id": "danielle.muscat@sydney.edu.au"
+  },
+  {
+    "id": 25,
+    "tool": "Rapid Estimate of Adolescent Literacy in Medicine (REALM-Teen)",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adolescents: 10 to 17 years",
+    "citation": "192 citation",
+    "Author": "Terry  C Davis",
+    "Email Id": "tdavis1@lsuhsc.edu"
+  },
+  {
+    "id": 26,
+    "tool": "Rapid Estimate of Adolescent Literacy in Medicine Short Form - REALM-TeenS",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adolescents: 10 to 17 years",
+    "citation": "14 citation",
+    "Author": "Terry  C Davis",
+    "Email Id": "tdavis1@lsuhsc.edu"
+  },
+  {
+    "id": 27,
+    "tool": "Rapid Estimate of Adult Literacy in Dentistry - REALD-99",
+    "CATEGORY": ["Dental health"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "Citations:99",
+    "Author": "Julia Richman",
+    "Email Id": "julia.richman@gmail.com"
+  },
+  {
+    "id": 28,
+    "tool": "Rapid Estimate of Adult Literacy in Medicine short form",
+    "CATEGORY": [""],
+    "Population age:": "",
+    "citation": "",
+    "Author": "Ahsan Arozullah",
+    "Email Id": "arozulla@uic.edu"
+  },
+  {
+    "id": 29,
+    "tool": "Single Item Screener - SILS",
+    "CATEGORY": ["GENERAL"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "472Citations",
+    "Author": "Benjamin Littenberg",
+    "Email Id": "benjamin.littenberg@uvm.edu"
+  },
+  {
+    "id": 30,
+    "tool": "Weight Literacy Scale in English and Spanish",
+    "CATEGORY": ["Nutrition"],
+    "Population age:": "Adults: 18 to 64 years",
+    "citation": "2 citations",
+    "Author": "Milagros Rosal",
+    "Email Id": "Milagros.Rosal@umassmed.edu"
+  }
+]
