@@ -76,13 +76,13 @@ export default function Navigation() {
                             
                             <ul className="dropdown">
                                 <li className="dropdown-item" id="light">
-                                <FaSun />light
+                                <FaSun style={{ border: '2px solid white', borderRadius: '50%', padding: '2px', fontSize: '1.5em' }}/>light
                                 </li>
                                 <li className="dropdown-item" id="dark">
-                                <FaMoon />  dark
+                                <FaMoon style={{ border: '2px solid white', borderRadius: '50%', padding: '2px', fontSize: '1.5em' }}/>  dark
                                 </li>
                                 <li className="dropdown-item" id="solar">
-                                <Icon style={{borderRadius:"50%"}}><FaYinYang /></Icon>   solarize
+                                <FaYinYang style={{ border: '2px solid white', borderRadius: '50%', padding: '2px', fontSize: '1.5em' }}/>   solarize
                                 </li>
                             </ul>
                             </Nav.Link>
