@@ -4,9 +4,11 @@ const Survey = require('../models/question.model');
 // to insert the data
 const saveSurvey = async (req, res) => {
   try {
-    const { SurveyTitle, SurveyDesc, qs } = req.body;
-    const surveyId = uuidv4(); // Generate a unique survey ID
-
+    const { surveyId, SurveyTitle, SurveyDesc, qs } = req.body;
+    //const surveyId = uuidv4(); // Generate a unique survey ID
+    if (!surveyId || !SurveyTitle || !SurveyDesc || !qs) {
+      return res.status(400).json({ message: 'Missing required fields' });
+    }
     const survey = new Survey.Survey({
       surveyId,
       title: SurveyTitle,

@@ -50,8 +50,9 @@ const StrictModeDroppable = ({ children, ...props }) => {
 };
 
 var strs = [];
-const id = uuidv4();
+
 function QuestionForm() {
+  const id = uuidv4();
   const [csvContent, setCsvContent] = useState({ str: [] });
   const [latexData, setLatexData] = useState({ latex: [] });
   const [questions, setQuestions] = useState([
@@ -154,10 +155,9 @@ function QuestionForm() {
   const saveForm = async () => {
     sendData((dat) => ({
       ...dat,
-      surveyId: id,
+      surveyId: uuidv4(),
       qs: questions,
     }));
-    console.log(data);
     try {
       const response = await axios.post(
         "https://nghl-api.vercel.com/api/survey/saveSurvey",
