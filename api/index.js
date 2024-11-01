@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes'); // Ensure this path is correc
 const surveyRoutes = require('./routes/surveyRoutes');
 const questionRoutes = require('./routes/questionRoutes');
 const responseRoutes = require('./routes/responseRoutes');
-const config = require('./config/db');
+//const config = require('./config/db');
 const cors = require('cors');
 const app = express();
 
