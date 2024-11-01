@@ -35,6 +35,8 @@ app.use('/api/questions', questionRoutes);
 app.use('/api/survey', surveyRoutes);
 app.use('/api/responses', responseRoutes);
 
+app.options('*', cors());
+
 // Test Route
 app.get('/test', (req, res) => {
     console.log('Test route hit');
