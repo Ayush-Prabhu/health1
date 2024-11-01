@@ -100,7 +100,7 @@ export default function ResponseTemplate() {
         };
 
         try {
-            await axios.post('https://nghl-api.vercel.com/api/responses/saveresponse', response);
+            await axios.post('https://nghl-api.vercel.app/api/responses/saveresponse', response);
             console.log('Response saved:', response);
         } catch (error) {
             console.error('Error saving response:', error);

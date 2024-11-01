@@ -160,7 +160,7 @@ function QuestionForm() {
     }));
     try {
       const response = await axios.post(
-        "https://nghl-api.vercel.com/api/survey/saveSurvey",
+        "https://nghl-api.vercel.app/api/survey/saveSurvey",
         data
       );
       console.log("Survey saved successfully!", response.data);
