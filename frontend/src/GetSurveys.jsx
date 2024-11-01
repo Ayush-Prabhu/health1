@@ -8,7 +8,7 @@ const GetSurveys = () => {
   useEffect(() => {
     const fetchSurveys = async () => {
       try {
-        const response = await axios.get('http://nghl-api.vercel.app/api/survey/getSurvey');
+        const response = await axios.get('https://nghl-api.vercel.app/api/survey/getSurvey');
         setSurveys(response.data);
       } catch (error) {
         console.error('Error fetching surveys:', error);

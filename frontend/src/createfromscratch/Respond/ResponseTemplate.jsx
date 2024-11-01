@@ -28,7 +28,7 @@ export default function ResponseTemplate() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://nghl-api.vercel.com/api/survey/getSurvey`);
+                const response = await axios.get(`https://nghl-api.vercel.com/api/survey/getSurvey`);
                 const qs = response.data;
 
                 if (Array.isArray(qs)) {
