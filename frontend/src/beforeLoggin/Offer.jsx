@@ -4,7 +4,7 @@ import { Card, Button, ButtonGroup } from 'react-bootstrap';
 export default function Offer(props) {
   let show = props.show;
   const requestUrl = props.id === 4 
-    ? 'http://localhost:3000/responsetemplate?surveyId=eeb96362-0e5f-4058-9218-1b2343b52d75' 
+    ? 'https://health1-fe.vercel.app/responsetemplate?surveyId=eeb96362-0e5f-4058-9218-1b2343b52d75' 
     : props.to;
 
   return (

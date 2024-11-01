@@ -11,7 +11,7 @@ export default function PublishModal({ show, onHide, surveyId }) {
   useEffect(() => {
     const generateQR = async () => {
       try {
-        const randomUrl = `localhost:3000/responsetemplate?surveyId=${surveyId}`; // Update with proper url
+        const randomUrl = `health1-fe.vercel.app/responsetemplate?surveyId=${surveyId}`; // Update with proper url
         setUrl(randomUrl);
         const response = await QRCode.toDataURL(randomUrl, { errorCorrectionLevel: 'H' }); // Use the random URL to generate the QR code
         setQrCode(response);

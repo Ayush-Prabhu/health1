@@ -28,7 +28,7 @@ export default function ResponseTemplate() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/api/survey/getSurvey`);
+                const response = await axios.get(`http://nghl-api.vercel.com/api/survey/getSurvey`);
                 const qs = response.data;
 
                 if (Array.isArray(qs)) {
@@ -99,7 +99,7 @@ export default function ResponseTemplate() {
         };
 
         try {
-            await axios.post('http://localhost:5000/api/responses/saveresponse', response);
+            await axios.post('https://nghl-api/api/responses/saveresponse', response);
             console.log('Response saved:', response);
         } catch (error) {
             console.error('Error saving response:', error);
