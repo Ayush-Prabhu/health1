@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: '*',
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
 // Logging Middleware
@@ -34,8 +34,6 @@ app.use('/api/users', userRoutes); // Ensure this path is correct
 app.use('/api/questions', questionRoutes);
 app.use('/api/survey', surveyRoutes);
 app.use('/api/responses', responseRoutes);
-
-app.options('*', cors());
 
 // Test Route
 app.get('/test', (req, res) => {
