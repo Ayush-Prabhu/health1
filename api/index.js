@@ -5,16 +5,16 @@ const userRoutes = require('./routes/userRoutes'); // Ensure this path is correc
 const surveyRoutes = require('./routes/surveyRoutes');
 const questionRoutes = require('./routes/questionRoutes');
 const responseRoutes = require('./routes/responseRoutes');
-const config = require('./config/db');
+//const config = require('./config/db');
 const cors = require('cors');
 const app = express();
 
 // Middleware
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'https://healthmit.vercel.app',
+    origin: '*',
     credentials: true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE','FETCH'],
 }));
 
 // Logging Middleware
